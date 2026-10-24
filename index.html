@@ -1,0 +1,392 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pricing Plans | ProLaunch</title>
+    <meta name="description" content="Choose the right pricing plan for your business. Flexible plans for individuals, teams and enterprises.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Background decoration -->
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="#" class="brand">
+            <span class="brand-icon">P</span>
+            <span>ProLaunch</span>
+        </a>
+
+        <div class="nav-links">
+            <a href="#pricing">Pricing</a>
+            <a href="#features">Features</a>
+            <a href="#faq">FAQ</a>
+        </div>
+
+        <a href="#pricing" class="nav-button">Get Started ↗</a>
+    </nav>
+
+    <!-- Main pricing section -->
+    <main>
+        <section class="pricing-section" id="pricing">
+
+            <div class="section-heading">
+                <div class="announcement">
+                    <span class="announcement-dot"></span>
+                    SIMPLE PRICING, POWERFUL RESULTS
+                </div>
+
+                <h1>
+                    Plans that grow<br>
+                    with <span>your ambition.</span>
+                </h1>
+
+                <p class="section-description">
+                    Everything you need to build, manage, and grow your
+                    business. Choose the plan that works for you.
+                </p>
+
+                <!-- Billing toggle -->
+                <div class="billing-control">
+                    <span id="monthlyText" class="billing-label active">
+                        Monthly
+                    </span>
+
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="billingToggle"
+                               aria-label="Switch to yearly billing">
+                        <span class="toggle-track"></span>
+                    </label>
+
+                    <span id="yearlyText" class="billing-label">
+                        Yearly
+                    </span>
+
+                    <span class="discount-tag">SAVE 20%</span>
+                </div>
+            </div>
+
+            <!-- Pricing cards -->
+            <div class="pricing-grid">
+
+                <!-- Starter -->
+                <article class="pricing-card" data-plan="Starter">
+
+                    <div class="card-top">
+                        <div class="plan-icon starter-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 3 4 13h7l-1 8 10-12h-7l-1-6Z"/>
+                            </svg>
+                        </div>
+
+                        <span class="plan-category">FOR INDIVIDUALS</span>
+                    </div>
+
+                    <h2>Starter</h2>
+
+                    <p class="plan-description">
+                        The essentials to launch your next big idea.
+                    </p>
+
+                    <div class="price-container">
+                        <span class="currency">₹</span>
+                        <span class="price"
+                              data-monthly="0"
+                              data-yearly="0">0</span>
+                        <span class="price-period">/ month</span>
+                    </div>
+
+                    <p class="billing-caption">Free forever</p>
+
+                    <button class="choose-plan" data-plan="Starter">
+                        Get started for free <span>→</span>
+                    </button>
+
+                    <div class="feature-divider"></div>
+
+                    <h3 class="features-heading">WHAT'S INCLUDED</h3>
+
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> 1 active project</li>
+                        <li><span class="check">✓</span> 2 GB cloud storage</li>
+                        <li><span class="check">✓</span> Basic analytics</li>
+                        <li><span class="check">✓</span> Community support</li>
+                        <li class="unavailable"><span>×</span> Team collaboration</li>
+                        <li class="unavailable"><span>×</span> Advanced reports</li>
+                        <li class="unavailable"><span>×</span> Priority support</li>
+                    </ul>
+                </article>
+
+                <!-- Professional -->
+                <article class="pricing-card featured" data-plan="Professional">
+
+                    <div class="popular-label">
+                        <span>✦</span> MOST POPULAR
+                    </div>
+
+                    <div class="card-top">
+                        <div class="plan-icon pro-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="m12 2 2.4 6.6L21 11l-6.6 2.4L12 20l-2.4-6.6L3 11l6.6-2.4L12 2Z"/>
+                                <path d="m19 15 1.2 3.2L23 19l-2.8 1-1.2 3-1-3-3-1 3-1 1-3Z"/>
+                            </svg>
+                        </div>
+
+                        <span class="plan-category">FOR PROFESSIONALS</span>
+                    </div>
+
+                    <h2>Professional</h2>
+
+                    <p class="plan-description">
+                        More power and flexibility to grow faster.
+                    </p>
+
+                    <div class="price-container">
+                        <span class="currency">₹</span>
+                        <span class="price"
+                              data-monthly="999"
+                              data-yearly="799">999</span>
+                        <span class="price-period">/ month</span>
+                    </div>
+
+                    <p class="billing-caption">Billed ₹999 monthly</p>
+
+                    <button class="choose-plan featured-button"
+                            data-plan="Professional">
+                        Choose Professional <span>→</span>
+                    </button>
+
+                    <div class="feature-divider"></div>
+
+                    <h3 class="features-heading">EVERYTHING IN STARTER, PLUS</h3>
+
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> Unlimited active projects</li>
+                        <li><span class="check">✓</span> 100 GB cloud storage</li>
+                        <li><span class="check">✓</span> Advanced analytics</li>
+                        <li><span class="check">✓</span> Team collaboration</li>
+                        <li><span class="check">✓</span> Custom integrations</li>
+                        <li><span class="check">✓</span> Priority email support</li>
+                        <li class="unavailable"><span>×</span> Dedicated account manager</li>
+                    </ul>
+                </article>
+
+                <!-- Enterprise -->
+                <article class="pricing-card" data-plan="Enterprise">
+
+                    <div class="card-top">
+                        <div class="plan-icon enterprise-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M3 21h18M5 21V7l7-4 7 4v14M9 10h1m4 0h1m-6 4h1m4 0h1m-5 7v-4h4v4"/>
+                            </svg>
+                        </div>
+
+                        <span class="plan-category">FOR TEAMS</span>
+                    </div>
+
+                    <h2>Enterprise</h2>
+
+                    <p class="plan-description">
+                        Advanced tools for ambitious teams and businesses.
+                    </p>
+
+                    <div class="price-container">
+                        <span class="currency">₹</span>
+                        <span class="price"
+                              data-monthly="2499"
+                              data-yearly="1999">2499</span>
+                        <span class="price-period">/ month</span>
+                    </div>
+
+                    <p class="billing-caption">Billed ₹2,499 monthly</p>
+
+                    <button class="choose-plan" data-plan="Enterprise">
+                        Choose Enterprise <span>→</span>
+                    </button>
+
+                    <div class="feature-divider"></div>
+
+                    <h3 class="features-heading">EVERYTHING IN PRO, PLUS</h3>
+
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> Unlimited projects</li>
+                        <li><span class="check">✓</span> 1 TB cloud storage</li>
+                        <li><span class="check">✓</span> Advanced team controls</li>
+                        <li><span class="check">✓</span> API access</li>
+                        <li><span class="check">✓</span> Enhanced security</li>
+                        <li><span class="check">✓</span> 24/7 priority support</li>
+                        <li><span class="check">✓</span> Dedicated account manager</li>
+                    </ul>
+                </article>
+
+            </div>
+
+            <!-- Trust information -->
+            <div class="trust-row">
+                <div class="trust-item">
+                    <span class="trust-icon">✓</span>
+                    No hidden fees
+                </div>
+
+                <div class="trust-item">
+                    <span class="trust-icon">✓</span>
+                    Cancel anytime
+                </div>
+
+                <div class="trust-item">
+                    <span class="trust-icon">✓</span>
+                    Secure payments
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Feature comparison -->
+        <section class="comparison-section" id="features">
+            <div class="comparison-heading">
+                <span class="section-kicker">COMPARE PLANS</span>
+                <h2>Find your perfect fit.</h2>
+                <p>Compare the essentials before you decide.</p>
+            </div>
+
+            <div class="comparison-wrapper">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Features</th>
+                            <th>Starter</th>
+                            <th>Professional</th>
+                            <th>Enterprise</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Active projects</td>
+                            <td>1</td>
+                            <td>Unlimited</td>
+                            <td>Unlimited</td>
+                        </tr>
+                        <tr>
+                            <td>Cloud storage</td>
+                            <td>2 GB</td>
+                            <td>100 GB</td>
+                            <td>1 TB</td>
+                        </tr>
+                        <tr>
+                            <td>Analytics</td>
+                            <td>Basic</td>
+                            <td>Advanced</td>
+                            <td>Advanced</td>
+                        </tr>
+                        <tr>
+                            <td>Team collaboration</td>
+                            <td>—</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>API access</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>Priority support</td>
+                            <td>—</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq-section" id="faq">
+            <div class="comparison-heading">
+                <span class="section-kicker">GOT QUESTIONS?</span>
+                <h2>Frequently asked questions.</h2>
+                <p>Everything you need to know about our plans.</p>
+            </div>
+
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>Can I change my plan later?</summary>
+                    <p>Yes. You can upgrade or downgrade your plan as your needs change. Actual changes would need to be supported by your subscription system.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Can I cancel my subscription?</summary>
+                    <p>You can design your service to allow cancellation at any time. Connect a billing provider and implement the cancellation workflow to enable this feature.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>What happens when I choose a plan?</summary>
+                    <p>This demo shows a confirmation message. To accept payments, connect a backend and a payment provider.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Is the yearly plan discounted?</summary>
+                    <p>Yes. The example prices use an assumed 20% discount for annual billing, shown as a monthly-equivalent price.</p>
+                </details>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="#" class="brand">
+            <span class="brand-icon">P</span>
+            <span>ProLaunch</span>
+        </a>
+
+        <p>© <span id="currentYear"></span> ProLaunch. Demo pricing page.</p>
+
+        <a href="#pricing">Back to top ↑</a>
+    </footer>
+
+    <!-- Confirmation dialog -->
+    <div class="modal-overlay" id="planModal" aria-hidden="true">
+        <div class="modal" role="dialog" aria-modal="true"
+             aria-labelledby="modalTitle">
+            <button class="modal-close" id="closeModal"
+                    aria-label="Close dialog">×</button>
+
+            <div class="modal-success-icon">✓</div>
+            <span class="section-kicker">PLAN SELECTED</span>
+            <h2 id="modalTitle">You're ready to get started!</h2>
+            <p id="modalMessage">Your selected plan details appear here.</p>
+
+            <div class="modal-summary">
+                <span>Selected plan</span>
+                <strong id="selectedPlan">Professional</strong>
+
+                <span>Billing</span>
+                <strong id="selectedBilling">Monthly</strong>
+
+                <span>Monthly equivalent</span>
+                <strong id="selectedPrice">₹999</strong>
+            </div>
+
+            <button class="modal-action" id="confirmSelection">
+                Got it
+            </button>
+            <p class="modal-note">Demo only — no payment will be taken.</p>
+        </div>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
